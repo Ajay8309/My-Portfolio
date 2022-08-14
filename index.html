@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
     <link
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Source+Sans+Pro:wght@200;600;700&display=swap" rel="stylesheet">
@@ -14,32 +14,49 @@
 <body> 
      
     <header class="navigation shadow">
-        <div class="navbar">
             <div class="logo">
                 <h3>AJAY</h3>
             </div>
+            <ul class="nav-list1">
+                <li class="nav-link1"> <a href="#home">Home</a> </li>
+                <li class="nav-link1"> <a href="#services">Services</a> </li>
+                <li class="nav-link1"> <a href="#about">About</a> </li>
+                <li class="nav-link1"> <a href="#skills">Skills</a> </li>
+                <li class="nav-link1"> <a href="#work">Work</a> </li>
+            </ul>
+            <ul class="social-links1">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class=" fab fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
             <!-- <button class="flip">Color<br>flip</button> -->
             <div class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </div>
-        </div>
+        </header>
+        <!-- <hr> -->
         <ul class="nav-list">
+            <div class="close nav-link">
+                <h1></h1>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
             <li class="nav-link"> <a href="#home">Home</a> </li>
             <li class="nav-link"> <a href="#services">Services</a> </li>
             <li class="nav-link"> <a href="#about">About</a> </li>
             <li class="nav-link"> <a href="#skills">Skills</a> </li>
             <li class="nav-link"> <a href="#work">Work</a> </li>
+            <hr>
+            <ul class="social-links">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class=" fab fa-linkedin"></i></a></li>
+            </ul>
         </ul>
-        
-    </header>
     <i class="fas fa-infinity flip" ></i>
-
-    <!-- <ul class="nav-list2">
-        <li class="nav-link1"> <a href="#home" class="link">Home</a> </li>
-        <li class="nav-link1"> <a href="#services"class="link">Services</a> </li>
-        <li class="nav-link1"> <a href="#about"class="link">About</a> </li>
-        <li class="nav-link1"> <a href="#work"class="link">Work</a> </li>
-    </ul> -->
 
     <section class="intro" id="home">
            <div>
@@ -50,10 +67,12 @@
            </div>
         <img src="./imgs/dev-jane-01.jpg" alt="" class="intro-img">
     </section>
-    <div class="social-links">
+    <!-- <div class="social-links">
         <i class="fab fa-linkedin"></i>
-        <i class="fab fa-github"><a href="https://github.com/Ajay8309"></a></i>
-    </div>
+        <a href="https://github.com/Ajay8309" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div> -->
 
     <section class="my-services" id="services">
 
@@ -186,64 +205,64 @@
 <hr class="hr-work">
 
     <section class="my-work" id="work">
-        <h2 class="section-title">My work</h2>
+        <h2 class="section-title section-title-work">My work</h2>
         <div class="underline"></div>
-            <p class="section-subtitle"></p>
+            <!-- <p class="section-subtitle"></p> -->
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-01.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-01.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-02.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-02.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-03.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-03.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-04.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-04.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 05 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-05.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-05.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 06 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-06.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-06.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 07 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-07.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-07.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 08 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-01.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-01.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 09 -->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-09.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-09.jpg" alt="" class="portfolio-img">
                 </a>
                 
                 <!-- Portfolio item 0 0-->
-                <a href="#" class="portfolio-item">
-                    <img src="./imgs/portfolio-10.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio-item">
+                    <img src="./imgs/portfolio-10.jpg" alt="" class="portfolio-img">
                 </a>
             </div>
     </section>
 
-    <footer></footer>
+    <footer>@Copyright 2022 <br> my-portfolio.com <br> Ajay panaskar</footer>
     <script src="index.js"></script>
 </body>
 </html>

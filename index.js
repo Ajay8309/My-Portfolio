@@ -1,10 +1,12 @@
 
+document.querySelector('.nav-toggle').addEventListener('click',function(){
+    document.querySelector('.nav-list').classList.toggle('show-links');
+})
 
-document.querySelector('.nav-toggle').addEventListener('click', function(){
-    document.querySelector('.nav-list').classList.toggle("show-links");
-    // document.querySelector('.navigation').classList.toggle("shadow");
-    // document.querySelector('.nav-list').classList.toggle("shadow");
-});
+document.querySelector('.close-btn').addEventListener('click',function(){
+    document.querySelector('.nav-list').classList.remove('show-links');
+    console.log("bla bla")
+})
 
 
 const colors = ["white", "rgba(133,122,200)", " rgb(93, 98, 90)"];
@@ -19,30 +21,22 @@ btn.addEventListener('click',function(){
 
   if(randomNumber!=0){
     document.querySelector('.intro').classList.add("color-white");
-    document.querySelector('.nav-list2').classList.add('nav-black');
-    document.querySelector('.navigation').classList.add('nav-black')
-    document.querySelector('.nav-toggle').classList.add('toggle-white')
-    document.querySelector('.flip').classList.add('flip-white')
-    // document.querySelector('.nav-link1').classList.add('.link1-accent')
-    
+    document.querySelector('.about-me-body').style.color = 'white';   
+     document.querySelector('.my-skills').classList.add('color-white');
+    document.querySelector('.section-title-skills').style.color = 'white';
+    document.querySelector('.section-title-about').style.color = 'white';
     
 }else{
     document.querySelector('.intro').classList.remove("color-white");
-    document.querySelector('.nav-list2').classList.remove('nav-black');
-    document.querySelector('.navigation').classList.remove('nav-black')
-    document.querySelector('.nav-toggle').classList.remove('toggle-white')
-    document.querySelector('.flip').classList.remove('flip-white')
-    
+    document.querySelector('.flip').classList.remove('flip-white');
+    document.querySelector('.my-skills').classList.remove('color-white');
+    document.querySelector('.section-title-skills').style.color = 'black';
+    document.querySelector('.about-me-body').style.color = 'black';   
+    document.querySelector('.section-title-about').style.color = 'black';
 }
-
-
-  
 })
-
 
 function getRandomNumber() {
     return Math.floor(Math.random() * colors.length);
   }
-
-
 
